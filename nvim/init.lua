@@ -199,8 +199,8 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<PageUp>', 'Hzz', { desc = '"Normal" PageUp' })
 vim.keymap.set('n', '<PageDown>', 'Lzz', { desc = '"Normal" PageDown' })
-vim.keymap.set('i', '<PageUp>', '', { desc = 'Move to the start of the line' })
-vim.keymap.set('i', '<PageDown>', '', { desc = 'Move to the end of the line' })
+vim.keymap.set('i', '<PageUp>', '<C-o>^', { desc = 'Move to the start of the line' })
+vim.keymap.set('i', '<PageDown>', '<C-o>$', { desc = 'Move to the end of the line' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
